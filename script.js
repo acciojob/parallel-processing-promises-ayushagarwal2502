@@ -1,5 +1,8 @@
 //your JS code here. If required.
-const output = document.getElementById("output");
+
+window.onload = function() {
+  //const btn = document.getElementById("download-images-button");
+   const output = document.getElementById("output");
 const btn = document.getElementById("download-images-button");
 const images = [
   "https://picsum.photos/id/237/200/300",
@@ -28,3 +31,4 @@ downloadAllImages(images)
   .catch(err => {
     console.error(err);
   });
+}
